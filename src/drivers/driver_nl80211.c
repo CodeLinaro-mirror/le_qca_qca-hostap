@@ -7550,6 +7550,8 @@ static int nl80211_connect_common(struct wpa_driver_nl80211_data *drv,
 		}
 
 		drv->assoc_freq = params->freq.freq;
+	} else {
+		drv->assoc_freq = 0;
 	}
 
 	if (params->freq_hint) {
