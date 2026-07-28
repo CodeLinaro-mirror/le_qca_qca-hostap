@@ -698,3 +698,11 @@ CONFIG_DPP2=y
 # IEEE P802.11bi/D4.0, 12.16.5 (IEEE 802.1X authentication utilizing
 # Authentication frames)
 #CONFIG_IEEE8021X_AUTH=y
+
+# OpenSSL PKCS#11/OpenSC engine and module trusted-path validation
+# Validate PKCS#11 engine, PKCS#11 module, and OpenSC engine shared library
+# paths (root-owned, non-writable regular file under /usr/lib with root-owned
+# ancestor directories) before dlopen()ing them. Disabled by default to avoid
+# affecting deployments that run wpa_supplicant as a non-root user with shared
+# libraries in a custom directory owned by that user.
+#CONFIG_TLS_ENGINE_TRUSTED_PATH=y
