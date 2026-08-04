@@ -428,3 +428,6 @@ CONFIG_DPP2=y
 # IEEE P802.11bi/D4.0, 12.16.5 (IEEE 802.1X authentication utilizing
 # Authentication frames)
 #CONFIG_IEEE8021X_AUTH=y
+
+# Automated Frequency Coordination for 6 GHz outdoor
+#CONFIG_AFC=y
